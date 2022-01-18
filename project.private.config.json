@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/download/download",
+          "pathName": "pages/download/download",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "/pages/result/result",
+          "pathName": "/pages/result/result",
+          "query": "",
+          "scene": 1011
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "codeId=123",
+          "scene": 1011
+        },
+        {
+          "name": "scan",
+          "pathName": "pages/index/index",
+          "query": "scene=%22codeId%22:%22ho3acJ6K23gqo4c5%22",
+          "scene": 1047
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": 1011
+        }
+      ]
+    }
+  }
+}

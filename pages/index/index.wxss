@@ -1,0 +1,35 @@
+/* pages/index.wxss */
+.scanCode {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanCode .scanCode_btn {
+    width: 400rpx;
+    height: 400rpx;
+    margin-top: -300rpx;
+    border-radius: 50%;
+    background-color: #22A5F8;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 6rpx 6rpx 18rpx 6rpx rgba(0,150,255,0.5) ;
+    box-shadow: 6rpx 6rpx 18rpx 6rpx rgba(0,150,255,0.5) ;
+}
+
+.scanCode_btn image {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.scanCode .scanCode_tip {
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    color: #424242;
+}

@@ -1,0 +1,27 @@
+<!--pages/result/result.wxml-->
+<view class="result_state">
+    <view class="icon">
+        <image class="img" src="../../img/{{loadIcon}}"></image>
+    </view>
+    <view class="message">
+        <image class="img" src="../../img/notice.png"></image>
+        <text>{{messageState}}</text>
+        <text wx:if="{{messageStateNumber==1}}" class="message-number">我马上到</text>
+        <text wx:if="{{messageStateNumber==2}}" class="message-number">10分钟内到</text>
+        <text wx:if="{{messageStateNumber==3}}" class="message-number">20分钟内到</text>
+        <text wx:if="{{messageStateNumber==0}}" class="message-num">无法挪车</text>
+        <text wx:if="{{messageStateNumber==5}}"></text>
+    </view>
+</view>
+        <image class="imges" src="../../img/22.jpg"></image>
+<!-- <view class="textes">您的挪车请求已通知车主，您可以关注公众号微鳯云对讲，下载微鳯APP与车主进行临时对讲。</view> -->
+<view class="result_btns">
+    <!-- <view>{{s}}</view>
+    <view>{{startTime}}</view> -->
+    <button class="btn goBack_index" bindtap="goBack_index" wx:if="{{goBack_btn}}">返回首页重新扫码</button>
+    <button class="btn download_weifeng" bindtap='download' wx:if="{{goBack_btn}}">重新申请挪车</button>
+    <view class="btnes">点击下方关注公众号</view>
+    <view style="width:100%;position:relative;height:70rpx;">
+        <official-account></official-account>
+    </view>
+</view>

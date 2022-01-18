@@ -1,0 +1,15 @@
+<!--pages/index.wxml-->
+<view class="scanCode">
+    <button class="scanCode_btn" open-type="getUserInfo" bindgetuserinfo="getUserLocation" wx:if="{{address==null}}">
+        <image src="../../img/scanCode.png"></image>
+    </button>
+    <button class="scanCode_btn" bindtap="scanCode" wx:else>
+        <image src="../../img/scanCode.png"></image>
+    </button>
+    <view class="scanCode_tip" wx:if="wx.getStorageSync('openId')">智能扫码，微鳯联系车主</view>
+    <view wx:if="{{address!=null}}">当前位置：{{address}}</view>
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserLocation" class="getUserInfo" wx:if="{{address==''}}">1</button> -->
+    <!-- <map id="map" latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%;height:600rpx;" ></map> -->
+</view>
+<official-account></official-account>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
